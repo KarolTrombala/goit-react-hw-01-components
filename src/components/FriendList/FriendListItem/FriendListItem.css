@@ -1,0 +1,32 @@
+.friend-list .item {
+    width: 240px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .avatar {
+    border-radius: 5%;
+    margin-right: 10px;
+    background-color: #e7efef;
+  }
+  
+  .status {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  .friend-list .avatar {
+    width: 60px;
+  }
+  
+  .friend-list .name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+  }
