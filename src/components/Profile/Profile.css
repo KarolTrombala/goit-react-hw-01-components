@@ -1,3 +1,4 @@
+
 .profile {
     display: flex;
     flex-direction: column;
@@ -9,6 +10,7 @@
       rgb(0 0 0 / 14%) 0px 3px 4px 0px, rgb(0 0 0 / 12%) 0px 1px 8px 0px;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 10px;
+    margin-left: 50px;
   }
   .description {
     font-size: small;
