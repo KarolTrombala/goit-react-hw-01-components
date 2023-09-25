@@ -1,20 +1,20 @@
 import PropTypes from 'prop-types';
 import './Statistics.css';
 
-export const Statistics = ({ title, stats}) => {
-    const getRandomHexColor = () => {
-        return `#${Math.floor(Math.random() * 16777215)
-        .toString(16)
-        .padStart(6,0)}`;
-    };
+export const Statistics = ({ title, stats }) => {
+  const getRandomHexColor = () => {
+    return `#${Math.floor(Math.random() * 16777215)
+      .toString(16)
+      .padStart(6, 0)}`;
+  };
 
-    return (
-        <section class="statistics">
-       <h2 class="title">{title}</h2>
+  return (
+    <section class="statistics">
+      <h2 class="title">{title}</h2>
 
-  <ul class="stat-list">
-    {stats.map(stat => (
-        <li class="item" style={{ backgroundColor: getRandomHexColor() }}>
+      <ul class="stat-list">
+        {stats.map(stat => (
+          <li class="item" style={{ backgroundColor: getRandomHexColor() }}>
             <span key="id" class="label">
               {stat.label}
             </span>
@@ -23,10 +23,10 @@ export const Statistics = ({ title, stats}) => {
         ))}
       </ul>
     </section>
-    );
+  );
 };
-   
+
 Statistics.propTypes = {
-    title: PropTypes.string,
-    stats: PropTypes.array,
-  };
+  title: PropTypes.string,
+  stats: PropTypes.array,
+};
