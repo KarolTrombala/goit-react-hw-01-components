@@ -1,4 +1,4 @@
-.transaction-history {
+.transactionhistory {
   font-size: 12px;
   width: 620px;
   border-radius: 5px;
@@ -9,29 +9,29 @@
   margin-bottom: 10px;
 }
 
-.transaction-history thead {
+.transactionhistory thead {
   text-transform: uppercase;
   height: 100px;
 }
 
-.transaction-history th {
+.transactionhistory th {
   color: white;
   background-color: lightseagreen;
 }
-.transaction-history th:nth-child(-n + 2) {
+.transactionhistory th:nth-child(-n + 2) {
   border-right: 1px solid lightgrey;
 }
 
-.transaction-history tr {
+.transactionhistory tr {
   height: 40px;
   color: grey;
   text-transform: capitalize;
   text-align: center;
   background-color: rgb(235 235 235);
 }
-.transaction-history td:nth-child(-n + 2) {
+.transactionhistory td:nth-child(-n + 2) {
   border-right: 1px solid lightgrey;
 }
-.transaction-history tr:nth-child(odd) {
+.transactionhistory tr:nth-child(odd) {
   background-color: white;
 }
