@@ -1,7 +1,37 @@
 .friendlist {
-  width: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
-  margin-left: 1600px;
+  max-width: 220px;
+  margin: 0 auto 50px;
+  list-style: none;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  box-shadow: 8px 7px 24px -12px rgba(66, 68, 90, 0.46);
+}
+
+.status {
+  background-color: red;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.true {
+  background-color: green;
+}
+
+.avatar {
+  margin-right: 10px;
+}
+
+.name {
+  font-size: 20px;
 }
