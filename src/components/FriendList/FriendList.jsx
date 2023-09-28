@@ -8,16 +8,6 @@ export const FriendList = ({ friends }) => {
   );
 };
 
-// export const FriendList = ({ friends }) => {
-//   return (
-//     <ul className={css.friendlist}>
-//       {friends.map(item => (
-//         <FriendListItem key={item.id} friend={item} />
-//       ))}
-//     </ul>
-//   );
-// };
-
 FriendList.propTypes = {
   friends: PropTypes.arrayOf(
     PropTypes.shape({ id: PropTypes.number})
