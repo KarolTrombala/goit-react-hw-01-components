@@ -13,12 +13,10 @@ export const Statistics = ({ title, stats }) => {
       <h2 class="title">{title}</h2>
 
       <ul class="stat-list">
-        {stats.map(stat => (
+        {stats.map(item => (
           <li class="item" style={{ backgroundColor: getRandomHexColor() }}>
-            <span key="id" class="label">
-              {stat.label}
-            </span>
-            <span class="percentage">{stat.percentage}%</span>
+            <span key={item.id} class="label">{item.label}</span>
+            <span class="percentage">{item.percentage}%</span>
           </li>
         ))}
       </ul>
@@ -28,5 +26,11 @@ export const Statistics = ({ title, stats }) => {
 
 Statistics.propTypes = {
   title: PropTypes.string,
-  stats: PropTypes.array,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      label: PropTypes.string,
+      percentage: PropTypes.number,
+    })
+  )
 };
