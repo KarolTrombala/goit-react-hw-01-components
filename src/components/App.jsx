@@ -3,13 +3,15 @@ import { Statistics } from './Statistics/Statistics';
 import { FriendList } from './FriendList/FriendList';
 import { TransactionHistory } from './TransactionHistory/TransactionHistory';
 
+import css from './Profile/Profile.module.css';
+
 import user from './data/user.json';
 import data from './data/data.json';
 import friends from './data/friends.json';
 import transactions from './data/transactions.json';
 
 export const App = () => {
-  const { username, tag, location, avatar, stats } = user;
+  // const { username, tag, location, avatar, stats } = user;
 
   return (
     <div
@@ -23,12 +25,12 @@ export const App = () => {
       }}
     >
       <Profile
-        username={username}
-        tag={tag}
-        location={location}
-        avatar={avatar}
-        stats={stats}
-        className="profile"
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+        className={css.profile}
       />
       <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends} />
